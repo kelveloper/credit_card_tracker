@@ -1,0 +1,39 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Technical stack
+
+## Guiding Principle
+– Always select the simplest, most efficient tool that meets the project's requirements. Prefer robust, scalable options for complex apps and lightweight solutions for simple ones.
+
+## Frontend
+– Default to React for building interactive user interfaces with rich state management.
+
+– For projects that are primarily for content display or have minimal interactivity (e.g., a simple landing page, a basic form), suggest and use vanilla HTML/CSS/JS as a lighter, faster alternative.
+
+## Backend
+– The backend language will be Python, using a lightweight and modern web framework like Flask or FastAPI.
+
+## Database
+– The choice of database depends on the project's specific requirements. You, the agent, are responsible for recommending the best choice based on the prompt:
+
+– Supabase (PostgreSQL): Use for applications requiring user authentication, real-time data, collaboration, or that are expected to scale.
+
+– SQLite: Use for simple, local-first, single-user applications where data does not need to be shared or persisted online.
+
+## Search
+– For search functionality, rely on the built-in full-text search capabilities of the primary SQL database (like PostgreSQL in Supabase).
+
+– Only introduce a dedicated search engine like Elasticsearch if the application's core feature is complex, high-volume text search that goes beyond the database's native abilities.
+
+## Styling
+– Use Tailwind CSS as the primary framework for styling.
+
+– Prioritize clean, responsive layouts that work on all devices, while remaining flexible to accommodate specific aesthetic requests.
+
+## Testing
+– All major backend functionality must be supported by Python tests.
+
+
